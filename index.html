@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet">
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Order summary card</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      :root{
+        --primary-pale-blue: hsl(225, 100%, 94%); 
+        --primary-bright-blue: hsl(245, 75%, 52%);
+        --neutral-very-pale-blue: hsl(225, 100%, 98%);
+        --neutral-desaturated-blue: hsl(224, 23%, 55%);
+        --neutral-dark-blue: hsl(223, 47%, 23%);
+        --neutral-violet: #9775fa;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Red Hat Display", sans-serif;
+      }
+
+      section {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .panel {
+        width: 400px;
+        border-radius: 12px;
+        box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.1);
+        background-color: #fff;
+      }
+
+      .panel img{
+        width: 100%;
+        max-height: 20%;
+        border-radius: 12px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        margin-bottom: 24px;
+      }
+
+      .text-container{
+        padding: 10px 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .main-text{
+        text-align: center;
+        line-height: 1.5;
+        color: var(--neutral-desaturated-blue);
+        margin-bottom: 18px;
+      }
+
+      h1{
+        font-size: 24px;
+        margin-bottom: 12px;
+      }
+      
+      p{
+        font-size: 16px;
+      }
+
+      .pricing-container{
+        padding: 20px 20px;
+        border-radius: 12px;
+        background-color: var(--neutral-very-pale-blue);
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin-bottom: 28px;
+      }
+
+      .pricing-container a:link,
+      .pricing-container a:visited{
+        color: var(--primary-bright-blue);
+        margin-left: auto;
+        font-size: 16px;
+        font-weight: 700;
+      }
+
+      .pricing-container a:hover,
+      .pricing-container a:active{
+        color: var(--neutral-violet);
+        text-decoration: none;
+      }
+
+      .pricing-container img{
+        width: 42px;
+        height: 42px;
+        margin: 0;
+      }
+
+      .icon-text-container{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        align-items: center;
+      }
+
+      .top{
+        font-weight: 900;
+      }
+
+      .bottom{
+        color: var(--neutral-desaturated-blue);
+        margin-right: auto;
+      }
+
+      .btn:link,
+      .btn:visited{
+        box-shadow: 0 30px 30px 0 rgba(0, 0, 0, 0.12);
+        width: 100%;
+        text-align: center;
+        background-color: var(--primary-bright-blue);
+        color: #fff;
+        text-decoration: none;
+        display: inline-block;
+        padding: 10px 15px;
+        border-radius: 12px;
+        font-size: 16px;
+        font-weight: 500;
+      }
+
+      .btn:hover,
+      .btn:active {
+        background-color: var(--neutral-violet)
+      } 
+
+
+
+      .cancel:link,
+      .cancel:visited{
+        margin-top: 28px;
+        margin-bottom: 32px;
+        color: var(--neutral-desaturated-blue);
+        font-size: 16px;
+        font-weight: 700;
+        text-decoration: none;
+      }
+
+       .cancel:hover,
+      .cancel:active{
+        color: rgb(0, 0, 0);
+      }
+
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div class="panel">
+        <img src="/images/illustration-hero.svg" alt="A girl listening to music">
+        <div class="text-container">
+        <h1>Order Summary</h1> <p class="main-text">You can now listen to millions of songs, audiobooks, and
+        podcasts on any device anywhere you like!</p>
+        <div class="pricing-container">
+          <img src="/images/icon-music.svg" alt="Music">
+          <div class="icon-text-container">
+          <p class="top">Annnual Plan</p> 
+          <p class="bottom">$59.99/year</p> 
+          </div>
+          <a href="#">Change</a>
+        </div> 
+        <a href="#" class="btn">
+        Proceed to Payment 
+      </a> 
+      <a href="#" class="cancel">Cancel Order</a>
+        </div>
+      </div>
+
+      <!-- <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Your Name Here</a>. -->
+      </div>
+    </section>
+  </body>
+</html>
